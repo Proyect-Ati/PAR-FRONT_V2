@@ -8,7 +8,6 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
   
   constructor(private router: Router) {
   }

@@ -1,0 +1,81 @@
+<div style="text-align: center; max-width: 900px; margin: 0 auto; margin-top: 20px;">
+    <p-galleria [value]="images" [autoPlay]="true" [circular]="true" [responsiveOptions]="responsiveOptions"
+        [numVisible]="5">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.source" style="width: 100%;  border-radius: 15px;" />
+        </ng-template>
+
+        <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center">
+                <img [src]="item.source" style="max-width: 120px;  border-radius: 10px;" />
+            </div>
+        </ng-template>
+    </p-galleria>
+</div>
+<!-- <div class="container">
+    <div class="row seccionPerfil">
+      <div class="col-8 perfil">
+        <h3 class="tema info">Perfil de la Fundación</h3>
+        <p class="descripcion info">
+          La fundación Patitas al Rescate tiene como objetivo principal la
+          adopción de animales abandonados, así como también permitir a la
+          comunidad brindar apoyo, mediante las opciones de voluntariado y
+          apadrinamiento, con la finalidad de que los animales encuentren un hogar
+          seguro y se sientan felices.
+        </p>
+        <h3 class="tema info">Misión</h3>
+        <p class="descripcion info">
+          Concientizar a la comunidad sobre el respeto que se merecen nuestros
+          animalitos ayudando y brindando apoyo en su intención de cuidar a los
+          animales sin hogar. <br />Promover la tenencia de animales mediante la
+          vacunación, esterilización y adopción.
+        </p>
+        <h3 class="tema info">Visión</h3>
+        <p class="descripcion info">
+          Ser una entidad reconocida por su labor sin ningun fin de lucro,
+          proporcionando rescates y cuidados que contribuyan a una sociedad en
+          armonia con los animales.
+        </p>
+      </div>
+      <div class="col-4 imgInfoPerfil">
+        <img
+          src="assets/imagenes/perfilPatitasRescate.jpg"
+          class="img-fluid imagenInformacionPerfil"
+          alt="gatitos-perritos"
+        />
+      </div>
+    </div>
+    <div class="row row-cols-1 noticias">
+      <h1 class="titulo">Noticias destacadas</h1>
+    </div>
+    <div class="card flex justify-content-center">
+        <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            </ng-template>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                quas!
+            </p>
+            <ng-template pTemplate="footer">
+                <p-button label="Save" icon="pi pi-check"></p-button>
+                <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+            </ng-template>
+        </p-card>
+
+        <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            </ng-template>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                quas!
+            </p>
+            <ng-template pTemplate="footer">
+                <p-button label="Save" icon="pi pi-check"></p-button>
+                <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+            </ng-template>
+        </p-card> 
+
+    </div>
+  </div> -->

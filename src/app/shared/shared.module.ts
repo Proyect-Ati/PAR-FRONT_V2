@@ -4,6 +4,8 @@ import { InitialPageComponent } from './initial-page/initial-page.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { PrimengModule } from '../primeng/primeng.module';
+import { HeaderLoginComponent } from './header/header-login/header-login.component';
+import { InitialhomeComponent } from './home/initialhome/initialhome.component';
 
 
 
@@ -12,7 +14,9 @@ import { PrimengModule } from '../primeng/primeng.module';
   declarations: [
     MenuComponent,
     InitialPageComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderLoginComponent,
+    InitialhomeComponent,
     
   ],
   imports: [
@@ -22,7 +26,9 @@ import { PrimengModule } from '../primeng/primeng.module';
   exports: [
     MenuComponent,
     InitialPageComponent,
-    FooterComponent
+    FooterComponent, 
+    InitialhomeComponent,
+  
   ]
 })
 export class SharedModule { }

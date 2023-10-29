@@ -7,6 +7,11 @@ import { DataViewModule } from 'primeng/dataview';
 import { MenubarModule } from 'primeng/menubar';
 import { CardModule } from 'primeng/card';
 import { StyleClassModule } from 'primeng/styleclass';
+import { GalleriaModule } from 'primeng/galleria';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ScrollerModule } from 'primeng/scroller';
+import { ToolbarModule } from 'primeng/toolbar';
+
 
 
 @NgModule({
@@ -21,7 +26,12 @@ import { StyleClassModule } from 'primeng/styleclass';
     MenubarModule,
     CardModule,
     MenubarModule ,
-    StyleClassModule 
+    StyleClassModule,
+    GalleriaModule,
+    ProgressSpinnerModule,
+    ScrollerModule,
+    ToolbarModule 
+    
   ],
   exports: [
     ReactiveFormsModule,
@@ -30,7 +40,12 @@ import { StyleClassModule } from 'primeng/styleclass';
     DataViewModule,
     MenubarModule,
     CardModule ,  
-    StyleClassModule  , 
+    StyleClassModule, 
+    GalleriaModule,
+    ProgressSpinnerModule,
+    ScrollerModule,
+    ToolbarModule 
+    
   ]
 })
 export class PrimengModule { }
