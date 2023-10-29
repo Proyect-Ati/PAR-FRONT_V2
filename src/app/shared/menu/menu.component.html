@@ -1,0 +1,11 @@
+<div class="navbar">
+  <p-menubar [model]="items">
+      <ng-template pTemplate="start">
+          <img  style="margin: 0 20px;" src="assets/imagenes/patitas.png" height="40" class="mr-6" />
+      </ng-template>   
+      <ng-template pTemplate="end" c>
+        <a class="login" >Iniciar Sesión</a>
+        <a class="logout"><i  class="pi pi-sign-in" style="font-size: 1rem"></i></a>
+    </ng-template>     
+  </p-menubar>
+</div>
