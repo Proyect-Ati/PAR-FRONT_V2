@@ -11,6 +11,7 @@ import { GalleriaModule } from 'primeng/galleria';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ScrollerModule } from 'primeng/scroller';
 import { ToolbarModule } from 'primeng/toolbar';
+import { FieldsetModule } from 'primeng/fieldset';
 
 
 
@@ -30,7 +31,8 @@ import { ToolbarModule } from 'primeng/toolbar';
     GalleriaModule,
     ProgressSpinnerModule,
     ScrollerModule,
-    ToolbarModule 
+    ToolbarModule,
+    FieldsetModule,
     
   ],
   exports: [
@@ -44,7 +46,8 @@ import { ToolbarModule } from 'primeng/toolbar';
     GalleriaModule,
     ProgressSpinnerModule,
     ScrollerModule,
-    ToolbarModule 
+    ToolbarModule,
+    FieldsetModule
     
   ]
 })

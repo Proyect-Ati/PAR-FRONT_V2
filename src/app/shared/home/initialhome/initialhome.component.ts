@@ -14,11 +14,7 @@ export class InitialhomeComponent {
       { source: 'assets/imagenes/gatitos.png' },
       { source: 'assets/imagenes/refugio.jpg' },
       { source: 'assets/imagenes/perritos1.jpg' },
-      { source: 'assets/imagenes/perritos1.jpg' },
-      { source: 'assets/imagenes/perritos1.jpg'},
-
-
-
+  
     ];
 
     this.responsiveOptions = [

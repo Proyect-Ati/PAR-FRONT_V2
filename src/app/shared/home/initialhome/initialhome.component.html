@@ -1,81 +1,109 @@
 <div style="text-align: center; max-width: 900px; margin: 0 auto; margin-top: 20px;">
-    <p-galleria [value]="images" [autoPlay]="true" [circular]="true" [responsiveOptions]="responsiveOptions"
-        [numVisible]="5">
-        <ng-template pTemplate="item" let-item>
-            <img [src]="item.source" style="width: 100%;  border-radius: 15px;" />
-        </ng-template>
+  <p-galleria [value]="images" [autoPlay]="true" [circular]="true" [responsiveOptions]="responsiveOptions"
+    [numVisible]="5">
+    <ng-template pTemplate="item" let-item>
+      <img [src]="item.source" style="width: 100%;  border-top-right-radius:20px ; border-top-left-radius:20px ;" />
+    </ng-template>
 
-        <ng-template pTemplate="thumbnail" let-item>
-            <div class="grid grid-nogutter justify-content-center">
-                <img [src]="item.source" style="max-width: 120px;  border-radius: 10px;" />
-            </div>
-        </ng-template>
-    </p-galleria>
+    <ng-template pTemplate="thumbnail" let-item>
+      <div class="grid grid-nogutter justify-content-center">
+        <img [src]="item.source" style="max-width: 120px;  border-radius: 10px;" />
+      </div>
+    </ng-template>
+  </p-galleria>
 </div>
-<!-- <div class="container">
-    <div class="row seccionPerfil">
-      <div class="col-8 perfil">
-        <h3 class="tema info">Perfil de la Fundación</h3>
-        <p class="descripcion info">
-          La fundación Patitas al Rescate tiene como objetivo principal la
-          adopción de animales abandonados, así como también permitir a la
-          comunidad brindar apoyo, mediante las opciones de voluntariado y
-          apadrinamiento, con la finalidad de que los animales encuentren un hogar
-          seguro y se sientan felices.
-        </p>
-        <h3 class="tema info">Misión</h3>
-        <p class="descripcion info">
-          Concientizar a la comunidad sobre el respeto que se merecen nuestros
-          animalitos ayudando y brindando apoyo en su intención de cuidar a los
-          animales sin hogar. <br />Promover la tenencia de animales mediante la
-          vacunación, esterilización y adopción.
-        </p>
-        <h3 class="tema info">Visión</h3>
-        <p class="descripcion info">
-          Ser una entidad reconocida por su labor sin ningun fin de lucro,
-          proporcionando rescates y cuidados que contribuyan a una sociedad en
-          armonia con los animales.
-        </p>
-      </div>
-      <div class="col-4 imgInfoPerfil">
-        <img
-          src="assets/imagenes/perfilPatitasRescate.jpg"
-          class="img-fluid imagenInformacionPerfil"
-          alt="gatitos-perritos"
-        />
-      </div>
-    </div>
-    <div class="row row-cols-1 noticias">
-      <h1 class="titulo">Noticias destacadas</h1>
-    </div>
-    <div class="card flex justify-content-center">
-        <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
-            </ng-template>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                quas!
-            </p>
-            <ng-template pTemplate="footer">
-                <p-button label="Save" icon="pi pi-check"></p-button>
-                <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
-            </ng-template>
-        </p-card>
 
-        <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
-            </ng-template>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-                quas!
-            </p>
-            <ng-template pTemplate="footer">
-                <p-button label="Save" icon="pi pi-check"></p-button>
-                <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
-            </ng-template>
-        </p-card> 
+<div class="seccionPerfil">
+  <div class="perfil">
+    <br>
+    <p-fieldset legend="Perfil de la Fundación">
+      <p class="m-0">
+        La fundación Patitas al Rescate tiene como objetivo principal la
+        adopción de animales abandonados, así como también permitir a la
+        comunidad brindar apoyo, mediante las opciones de voluntariado y
+        apadrinamiento, con la finalidad de que los animales encuentren un hogar
+        seguro y se sientan felices. </p>
+    </p-fieldset>
+    <br>
+    <p-fieldset legend="Misión">
+      <p class="m-0">
+        Concientizar a la comunidad sobre el respeto que se merecen nuestros
+        animalitos ayudando y brindando apoyo en su intención de cuidar a los
+        animales sin hogar. <br />Promover la tenencia de animales mediante la
+        vacunación, esterilización y adopción. </p>
+    </p-fieldset>
+    <br>
+    <p-fieldset legend="Visión">
+      <p class="m-0">
+        Ser una entidad reconocida por su labor sin ningun fin de lucro,
+        proporcionando rescates y cuidados que contribuyan a una sociedad en
+        armonia con los animales. </p>
+    </p-fieldset>
+  </div>
+  <div style="text-align: center; max-width: 900px; margin: 0 auto; margin-top: 20px;">
+    <img src="assets/imagenes/perfilPatitasRescate.jpg" class="img-fluid imagenInformacionPerfil"
+      alt="gatitos-perritos" />
+  </div>
+</div>
+<div class="contenedor">
+  <h1 class="titulo">Noticias destacadas</h1>
+</div>
 
-    </div>
-  </div> -->
+<div class="contenedor">
+
+  <br>
+  <div class="item">
+    <p-card header="Fundaciones recolectarán alimento para mascotas en Guayaquil." [style]="{ width: '360px' }">
+      <ng-template pTemplate="header">
+        <img alt="noticia 1" src="assets/imagenes/1.jpeg" />
+      </ng-template>
+      <p style="text-align: justify;">
+        Médicos veterinarios de la Unidad de Bienestar Animal (UBA) recorrieron las instalaciones del predio donde
+        funcionaba un refugio.
+      </p>
+
+    </p-card>
+  </div>
+  <div class="item">
+
+    <p-card header="Bienestar animal registra más de 150 adopciones de mascotas en el 2022"
+      [style]="{ width: '360px' }">
+      <ng-template pTemplate="header">
+        <img alt="noticia 2" src="assets/imagenes/publi.jpeg" />
+      </ng-template>
+      <p style="text-align: justify;">
+        Médicos veterinarios de la Unidad de Bienestar Animal (UBA) recorrieron las instalaciones del predio donde
+        funcionaba un refugio.
+      </p>
+
+    </p-card>
+  </div>
+
+  <div class="item">
+    <p-card header="Bienestar animal registra más de 150 adopciones de mascotas en el 2022"
+      [style]="{ width: '360px' }">
+      <ng-template pTemplate="header">
+        <img alt="noticia 3" src="assets/imagenes/3.jpeg" />
+      </ng-template>
+      <p style="text-align: justify;">
+        Médicos veterinarios de la Unidad de Bienestar Animal (UBA) recorrieron las instalaciones del predio donde
+        funcionaba un refugio.
+      </p>
+    </p-card>
+  </div>
+
+  <div class="item">
+    <p-card header="Bienestar animal registra más de 150 adopciones de mascotas en el 2022"
+      [style]="{ width: '360px' }">
+      <ng-template pTemplate="header">
+        <img alt="noticia 4" src="assets/imagenes/4.jpeg" />
+      </ng-template>
+      <p style="text-align: justify;">
+        Médicos veterinarios de la Unidad de Bienestar Animal (UBA) recorrieron las instalaciones del predio donde
+        funcionaba un refugio.
+      </p>
+    </p-card>
+  </div>
+
+
+</div>
