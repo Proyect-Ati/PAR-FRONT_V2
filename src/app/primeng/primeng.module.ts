@@ -20,12 +20,13 @@ import { DividerModule } from 'primeng/divider';
     ButtonModule,
     DataViewModule,
     MenubarModule,
-    CardModule ,  
+    CardModule,  
     StyleClassModule,
     GalleriaModule,
     CarouselModule,
     AnimateModule,
-    DividerModule
+    DividerModule,
+    ButtonModule
   ]
 })
 export class PrimengModule { }

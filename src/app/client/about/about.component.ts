@@ -3,11 +3,11 @@ import { register } from 'swiper/element/bundle';
 import { principles } from '../interface/home';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css'],
 })
-export class HomeComponent implements OnInit {
+export class AboutComponent implements OnInit {
   products: any[] = [];
   containerStyles: any = {
     'max-width': '100%',
