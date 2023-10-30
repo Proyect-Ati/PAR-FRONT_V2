@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { AdminModule } from './admin/admin.module';
 import { SharedModule } from './shared/shared.module';
 import { PrimengModule } from './primeng/primeng.module';
+import { LoginModule } from './Componentes/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
   ],
   imports: [
     BrowserModule,
@@ -18,7 +19,8 @@ import { PrimengModule } from './primeng/primeng.module';
     BrowserAnimationsModule,
     AdminModule,
     SharedModule,
-    PrimengModule
+    PrimengModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent],

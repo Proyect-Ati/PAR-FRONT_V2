@@ -8,7 +8,6 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
   
   constructor(private router: Router) {
   }
@@ -81,6 +80,10 @@ export class MenuComponent implements OnInit {
 
   redireccionaVoluntariado() {
     this.router.navigate(['/forms_voluntarios']);
+  }
+
+  login(){
+    this.router.navigate(['/login']);
   }
 
 

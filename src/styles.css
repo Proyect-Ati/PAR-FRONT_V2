@@ -6,3 +6,23 @@
 body{
   margin: 0;
 }
+.contenedor{   
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px; 
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;  
+    padding-bottom: 30px; 
+    border-radius: 20px;
+}
+
+.item{
+    flex-grow: 1;
+    display: flex;
+    flex-basis: 200;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}

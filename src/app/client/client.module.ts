@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ClientRoutingModule } from './client-routing.module';
 import { AboutComponent } from './about/about.component';
 import { PrimengModule } from '../primeng/primeng.module';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AboutComponent
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,

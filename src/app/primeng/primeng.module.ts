@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 import { DataViewModule } from 'primeng/dataview';
@@ -11,6 +11,12 @@ import { GalleriaModule } from 'primeng/galleria';
 import { StyleClassModule } from 'primeng/styleclass';
 import { AnimateModule } from 'primeng/animate';
 import { DividerModule } from 'primeng/divider';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ScrollerModule } from 'primeng/scroller';
+import { ToolbarModule } from 'primeng/toolbar';
+import { FieldsetModule } from 'primeng/fieldset';
+
+
 
 @NgModule({
   exports: [
@@ -26,7 +32,12 @@ import { DividerModule } from 'primeng/divider';
     CarouselModule,
     AnimateModule,
     DividerModule,
-    ButtonModule
-  ]
+    ProgressSpinnerModule,
+    ScrollerModule,
+    ToolbarModule,
+    FieldsetModule,
+    //Angular
+    FormsModule
+  ],
 })
 export class PrimengModule { }
