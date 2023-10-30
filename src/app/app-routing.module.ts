@@ -4,21 +4,18 @@ import { InitialPageComponent } from './shared/initial-page/initial-page.compone
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'home' 
-  },
-  {
-    path: 'home',
-    component: InitialPageComponent,
-  },
-  {
     path: 'admin',
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
   },
   {
-    path: 'client',
+    path: 'pawstorescue',
+    component: InitialPageComponent,
     loadChildren: () => import('./client/client.module').then(m => m.ClientModule)
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'pawstorescue' 
   },
 ];
 

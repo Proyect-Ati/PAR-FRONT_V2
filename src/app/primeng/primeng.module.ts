@@ -6,31 +6,26 @@ import { ButtonModule } from 'primeng/button';
 import { DataViewModule } from 'primeng/dataview';
 import { MenubarModule } from 'primeng/menubar';
 import { CardModule } from 'primeng/card';
+import { CarouselModule } from 'primeng/carousel';
+import { GalleriaModule } from 'primeng/galleria';
 import { StyleClassModule } from 'primeng/styleclass';
-
+import { AnimateModule } from 'primeng/animate';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
-  declarations: [
-  ],
-  imports: [
+  exports: [
     CommonModule,
     ReactiveFormsModule,
     CalendarModule,
     ButtonModule,
     DataViewModule,
     MenubarModule,
-    CardModule,
-    MenubarModule ,
-    StyleClassModule 
-  ],
-  exports: [
-    ReactiveFormsModule,
-    CalendarModule,
-    ButtonModule,
-    DataViewModule,
-    MenubarModule,
     CardModule ,  
-    StyleClassModule  , 
+    StyleClassModule,
+    GalleriaModule,
+    CarouselModule,
+    AnimateModule,
+    DividerModule
   ]
 })
 export class PrimengModule { }
