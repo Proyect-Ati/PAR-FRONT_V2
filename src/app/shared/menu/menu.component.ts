@@ -82,5 +82,9 @@ export class MenuComponent implements OnInit {
     this.router.navigate(['/forms_voluntarios']);
   }
 
+  login(){
+    this.router.navigate(['/login']);
+  }
+
 
 }

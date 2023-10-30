@@ -28,7 +28,8 @@ import { InitialhomeComponent } from './home/initialhome/initialhome.component';
     InitialPageComponent,
     FooterComponent, 
     InitialhomeComponent,
-  
+    HeaderLoginComponent
+    
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,28 @@
+<app-header-login></app-header-login>
+<app-menu></app-menu>
+
+<body>
+    <div class="conte ">
+        <div class="info">
+            <br>
+            <h2>Bienvenido de nuevo</h2>
+            <hr />
+            <p class="txt-2">¡Bienvenido al equipo! Creemos que un equipo unido puede lograr un
+                crecimiento imparable de nuestra compañía, estamos muy felices de que formes parte.</p>
+       </div>
+        <form class="form">
+            <h2> Login</h2>
+            <p>¡Bienvenido al equipo! Creemos que un equipo unido puede lograr un
+                crecimiento imparable de nuestra compañía, estamos muy felices de que formes parte.</p>
+            <div class="inputs">
+                <form  [formGroup]="loginForm">
+                    <input type="email" class="box" placeholder="Ingrese tu correo" formControlName="email">
+                    <input type="password" class="box" placeholder="Ingrese su contraseña" formControlName="password">
+                    <button type="submit" class="submit" (click)="onSubmit()">Iniciar Sesión</button>
+                </form>
+            </div>
+        </form>
+    </div>
+</body>
+
+<app-footer></app-footer>

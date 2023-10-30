@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalendarModule } from 'primeng/calendar';
 import { ButtonModule } from 'primeng/button';
 import { DataViewModule } from 'primeng/dataview';
@@ -33,6 +33,8 @@ import { FieldsetModule } from 'primeng/fieldset';
     ScrollerModule,
     ToolbarModule,
     FieldsetModule,
+    //Angular
+    FormsModule
     
   ],
   exports: [
@@ -47,7 +49,10 @@ import { FieldsetModule } from 'primeng/fieldset';
     ProgressSpinnerModule,
     ScrollerModule,
     ToolbarModule,
-    FieldsetModule
+    FieldsetModule,
+
+    //Angular
+    FormsModule
     
   ]
 })
