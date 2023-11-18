@@ -2,10 +2,27 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body{
+/*
+font-family: 'Montserrat', sans-serif;        
+font-family: 'Roboto', sans-serif;            
+font-family: 'Source Sans 3', sans-serif;        
+*/
+h1, h2, h3, h4{
+  font-family: 'Montserrat', sans-serif;  
+}
+
+body {
+  box-sizing: border-box;
   margin: 0;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .contenedor{   
     display: flex;
     flex-wrap: wrap;
@@ -26,3 +43,6 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+html, body { height: 100%; }
+body { background-color: #F7F7F7; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

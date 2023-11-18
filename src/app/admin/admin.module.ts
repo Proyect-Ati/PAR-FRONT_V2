@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrimengModule } from '../primeng/primeng.module';
-import { HomeComponent } from './home/home.component';
+import { PanelComponent } from './panel/panel.component';
 import { AdminRoutingModule } from './admin-routing.module';
+import { LoginComponent } from './login/login.component';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    PanelComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,

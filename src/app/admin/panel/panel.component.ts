@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-panel',
+  templateUrl: './panel.component.html',
+  styleUrls: ['./panel.component.css']
 })
-export class HomeComponent {
+export class PanelComponent {
   myForm: FormGroup;
 
   constructor() {

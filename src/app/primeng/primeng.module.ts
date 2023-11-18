@@ -15,7 +15,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ScrollerModule } from 'primeng/scroller';
 import { ToolbarModule } from 'primeng/toolbar';
 import { FieldsetModule } from 'primeng/fieldset';
-
+import { InputTextModule } from 'primeng/inputtext';
 
 
 @NgModule({
@@ -36,6 +36,7 @@ import { FieldsetModule } from 'primeng/fieldset';
     ScrollerModule,
     ToolbarModule,
     FieldsetModule,
+    InputTextModule,
     //Angular
     FormsModule
   ],
